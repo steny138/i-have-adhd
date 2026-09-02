@@ -35,22 +35,22 @@ agy plugin uninstall i-have-adhd
 `~/.gemini/GEMINI.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -145,22 +145,22 @@ codex plugin marketplace remove i-have-adhd
 `~/.codex/AGENTS.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -267,22 +267,22 @@ Copilot은 `disable-model-invocation`을 따릅니다. Claude Code와 마찬가�
 아래 블록을 프로젝트의 `.github/copilot-instructions.md`에 추가하세요(Copilot이 모든 채팅에서 읽습니다):
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -331,22 +331,22 @@ tap도 제거하려면 `hermes skills tap remove steny138/i-have-adhd`를 실행
 작업 디렉터리의 `AGENTS.md`(Hermes가 작업 디렉터리별로 불러옴) 또는 모든 세션에 적용할 페르소나의 `SOUL.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -432,22 +432,22 @@ npx skills remove i-have-adhd
 프로젝트의 `AGENTS.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -533,22 +533,22 @@ Skills 관리자에서 `i-have-adhd`를 제거하거나 `~/.config/zed/skills/i-
 개인 `~/.config/zed/AGENTS.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -603,22 +603,22 @@ npx skills remove i-have-adhd -g    # 전역 설치한 경우
 에이전트의 영구 규칙 파일에 다음을 붙여넣으세요. Cursor: **Settings → Rules → User Rules** 또는 `.cursor/rules/` 아래 `alwaysApply: true`인 프로젝트 규칙. OpenCode: `~/.config/opencode/AGENTS.md`.
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 </details>
 

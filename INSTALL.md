@@ -37,20 +37,20 @@ Add to `~/.gemini/GEMINI.md`:
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists at 5 items.
-10. No preamble, no recaps, no closers.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -148,20 +148,20 @@ Add to `~/.codex/AGENTS.md`:
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists at 5 items.
-10. No preamble, no recaps, no closers.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -270,20 +270,20 @@ Add the block below to `.github/copilot-instructions.md` in the project (Copilot
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists at 5 items.
-10. No preamble, no recaps, no closers.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -335,20 +335,20 @@ Add to the `AGENTS.md` in your working directory (Hermes loads it per workdir), 
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists at 5 items.
-10. No preamble, no recaps, no closers.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -647,20 +647,20 @@ Add to your personal `~/.config/zed/AGENTS.md`:
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists at 5 items.
-10. No preamble, no recaps, no closers.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -717,20 +717,20 @@ Paste this into your agent's persistent rules file. Cursor: **Settings → Rules
 ```markdown
 ## Output style
 
-The reader has ADHD. Shape every response so it can be acted on:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Lead with the answer or next action: command, path, or snippet first.
-2. Number multi-step work; one bounded action per step.
-3. End with one next action doable in under two minutes.
-4. Finish the current issue before raising a new one.
-5. Restate progress each turn ("step 3 of 5 done").
-6. Give time estimates in concrete units, never "a bit".
-7. After a change, show what now works.
-8. Errors: state location, cause, and fix. No drama.
-9. Cap lists at 5 items.
-10. No preamble, no recaps, no closers.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceptions: explain fully when asked to explain. Confirm before destructive actions. After three failed fixes, stop and name the doubtful assumption. If the request is ambiguous, ask one short question.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 </details>
 

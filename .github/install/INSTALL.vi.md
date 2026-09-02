@@ -35,22 +35,22 @@ Hoặc giữ nguyên cài đặt và tắt bằng `agy plugin disable i-have-adh
 Thêm vào `~/.gemini/GEMINI.md`:
 
 ```markdown
-## Phong cách đầu ra
+## Output style
 
-Người đọc có ADHD. Hãy định dạng mọi phản hồi để họ có thể hành động ngay:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Bắt đầu bằng câu trả lời hoặc hành động tiếp theo: ưu tiên lệnh, đường dẫn hoặc đoạn mã.
-2. Đánh số công việc nhiều bước; mỗi bước chỉ có một hành động rõ ràng.
-3. Kết thúc bằng một hành động tiếp theo có thể làm trong chưa đến hai phút.
-4. Hoàn tất vấn đề hiện tại trước khi nêu vấn đề mới.
-5. Nhắc lại tiến độ ở mỗi lượt ("đã xong bước 3/5").
-6. Ước tính thời gian bằng đơn vị cụ thể, không nói "một chút".
-7. Sau khi thay đổi, hãy cho biết điều gì hiện đã hoạt động.
-8. Với lỗi, nêu vị trí, nguyên nhân và cách sửa một cách khách quan.
-9. Giới hạn danh sách ở 5 mục.
-10. Không mở đầu, không tóm tắt lại, không lời kết.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Ngoại lệ: giải thích đầy đủ khi được yêu cầu. Xác nhận trước thao tác phá hủy dữ liệu. Sau ba lần sửa thất bại, dừng lại và nêu giả định đáng ngờ. Nếu yêu cầu mơ hồ, hãy hỏi một câu ngắn.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -145,22 +145,22 @@ codex plugin marketplace remove i-have-adhd
 Thêm vào `~/.codex/AGENTS.md`:
 
 ```markdown
-## Phong cách đầu ra
+## Output style
 
-Người đọc có ADHD. Hãy định dạng mọi phản hồi để họ có thể hành động ngay:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Bắt đầu bằng câu trả lời hoặc hành động tiếp theo: ưu tiên lệnh, đường dẫn hoặc đoạn mã.
-2. Đánh số công việc nhiều bước; mỗi bước chỉ có một hành động rõ ràng.
-3. Kết thúc bằng một hành động tiếp theo có thể làm trong chưa đến hai phút.
-4. Hoàn tất vấn đề hiện tại trước khi nêu vấn đề mới.
-5. Nhắc lại tiến độ ở mỗi lượt ("đã xong bước 3/5").
-6. Ước tính thời gian bằng đơn vị cụ thể, không nói "một chút".
-7. Sau khi thay đổi, hãy cho biết điều gì hiện đã hoạt động.
-8. Với lỗi, nêu vị trí, nguyên nhân và cách sửa một cách khách quan.
-9. Giới hạn danh sách ở 5 mục.
-10. Không mở đầu, không tóm tắt lại, không lời kết.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Ngoại lệ: giải thích đầy đủ khi được yêu cầu. Xác nhận trước thao tác phá hủy dữ liệu. Sau ba lần sửa thất bại, dừng lại và nêu giả định đáng ngờ. Nếu yêu cầu mơ hồ, hãy hỏi một câu ngắn.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -267,22 +267,22 @@ Copilot tuân theo `disable-model-invocation`: không có gì được áp dụn
 Thêm khối dưới đây vào `.github/copilot-instructions.md` của dự án (Copilot đọc nó trong mọi cuộc chat):
 
 ```markdown
-## Phong cách đầu ra
+## Output style
 
-Người đọc có ADHD. Hãy định dạng mọi phản hồi để họ có thể hành động ngay:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Bắt đầu bằng câu trả lời hoặc hành động tiếp theo: ưu tiên lệnh, đường dẫn hoặc đoạn mã.
-2. Đánh số công việc nhiều bước; mỗi bước chỉ có một hành động rõ ràng.
-3. Kết thúc bằng một hành động tiếp theo có thể làm trong chưa đến hai phút.
-4. Hoàn tất vấn đề hiện tại trước khi nêu vấn đề mới.
-5. Nhắc lại tiến độ ở mỗi lượt ("đã xong bước 3/5").
-6. Ước tính thời gian bằng đơn vị cụ thể, không nói "một chút".
-7. Sau khi thay đổi, hãy cho biết điều gì hiện đã hoạt động.
-8. Với lỗi, nêu vị trí, nguyên nhân và cách sửa một cách khách quan.
-9. Giới hạn danh sách ở 5 mục.
-10. Không mở đầu, không tóm tắt lại, không lời kết.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Ngoại lệ: giải thích đầy đủ khi được yêu cầu. Xác nhận trước thao tác phá hủy dữ liệu. Sau ba lần sửa thất bại, dừng lại và nêu giả định đáng ngờ. Nếu yêu cầu mơ hồ, hãy hỏi một câu ngắn.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -331,22 +331,22 @@ Hoặc xóa cả tap bằng `hermes skills tap remove steny138/i-have-adhd`.
 Thêm vào `AGENTS.md` trong thư mục làm việc (Hermes tải theo từng thư mục), hoặc vào `SOUL.md` của persona để dùng cho mọi phiên:
 
 ```markdown
-## Phong cách đầu ra
+## Output style
 
-Người đọc có ADHD. Hãy định dạng mọi phản hồi để họ có thể hành động ngay:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Bắt đầu bằng câu trả lời hoặc hành động tiếp theo: ưu tiên lệnh, đường dẫn hoặc đoạn mã.
-2. Đánh số công việc nhiều bước; mỗi bước chỉ có một hành động rõ ràng.
-3. Kết thúc bằng một hành động tiếp theo có thể làm trong chưa đến hai phút.
-4. Hoàn tất vấn đề hiện tại trước khi nêu vấn đề mới.
-5. Nhắc lại tiến độ ở mỗi lượt ("đã xong bước 3/5").
-6. Ước tính thời gian bằng đơn vị cụ thể, không nói "một chút".
-7. Sau khi thay đổi, hãy cho biết điều gì hiện đã hoạt động.
-8. Với lỗi, nêu vị trí, nguyên nhân và cách sửa một cách khách quan.
-9. Giới hạn danh sách ở 5 mục.
-10. Không mở đầu, không tóm tắt lại, không lời kết.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Ngoại lệ: giải thích đầy đủ khi được yêu cầu. Xác nhận trước thao tác phá hủy dữ liệu. Sau ba lần sửa thất bại, dừng lại và nêu giả định đáng ngờ. Nếu yêu cầu mơ hồ, hãy hỏi một câu ngắn.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -432,22 +432,22 @@ Hoặc xóa `~/.pi/agent/skills/i-have-adhd`.
 Thêm vào `AGENTS.md` của dự án:
 
 ```markdown
-## Phong cách đầu ra
+## Output style
 
-Người đọc có ADHD. Hãy định dạng mọi phản hồi để họ có thể hành động ngay:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Bắt đầu bằng câu trả lời hoặc hành động tiếp theo: ưu tiên lệnh, đường dẫn hoặc đoạn mã.
-2. Đánh số công việc nhiều bước; mỗi bước chỉ có một hành động rõ ràng.
-3. Kết thúc bằng một hành động tiếp theo có thể làm trong chưa đến hai phút.
-4. Hoàn tất vấn đề hiện tại trước khi nêu vấn đề mới.
-5. Nhắc lại tiến độ ở mỗi lượt ("đã xong bước 3/5").
-6. Ước tính thời gian bằng đơn vị cụ thể, không nói "một chút".
-7. Sau khi thay đổi, hãy cho biết điều gì hiện đã hoạt động.
-8. Với lỗi, nêu vị trí, nguyên nhân và cách sửa một cách khách quan.
-9. Giới hạn danh sách ở 5 mục.
-10. Không mở đầu, không tóm tắt lại, không lời kết.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Ngoại lệ: giải thích đầy đủ khi được yêu cầu. Xác nhận trước thao tác phá hủy dữ liệu. Sau ba lần sửa thất bại, dừng lại và nêu giả định đáng ngờ. Nếu yêu cầu mơ hồ, hãy hỏi một câu ngắn.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -533,22 +533,22 @@ Xóa `i-have-adhd` khỏi trình quản lý Skills, hoặc xóa `~/.config/zed/s
 Thêm vào `~/.config/zed/AGENTS.md` cá nhân:
 
 ```markdown
-## Phong cách đầu ra
+## Output style
 
-Người đọc có ADHD. Hãy định dạng mọi phản hồi để họ có thể hành động ngay:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Bắt đầu bằng câu trả lời hoặc hành động tiếp theo: ưu tiên lệnh, đường dẫn hoặc đoạn mã.
-2. Đánh số công việc nhiều bước; mỗi bước chỉ có một hành động rõ ràng.
-3. Kết thúc bằng một hành động tiếp theo có thể làm trong chưa đến hai phút.
-4. Hoàn tất vấn đề hiện tại trước khi nêu vấn đề mới.
-5. Nhắc lại tiến độ ở mỗi lượt ("đã xong bước 3/5").
-6. Ước tính thời gian bằng đơn vị cụ thể, không nói "một chút".
-7. Sau khi thay đổi, hãy cho biết điều gì hiện đã hoạt động.
-8. Với lỗi, nêu vị trí, nguyên nhân và cách sửa một cách khách quan.
-9. Giới hạn danh sách ở 5 mục.
-10. Không mở đầu, không tóm tắt lại, không lời kết.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Ngoại lệ: giải thích đầy đủ khi được yêu cầu. Xác nhận trước thao tác phá hủy dữ liệu. Sau ba lần sửa thất bại, dừng lại và nêu giả định đáng ngờ. Nếu yêu cầu mơ hồ, hãy hỏi một câu ngắn.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -603,22 +603,22 @@ npx skills remove i-have-adhd -g    # nếu đã cài toàn cục
 Dán nội dung này vào tệp quy tắc lâu dài của agent. Cursor: **Settings → Rules → User Rules**, hoặc quy tắc dự án trong `.cursor/rules/` với `alwaysApply: true`. OpenCode: `~/.config/opencode/AGENTS.md`.
 
 ```markdown
-## Phong cách đầu ra
+## Output style
 
-Người đọc có ADHD. Hãy định dạng mọi phản hồi để họ có thể hành động ngay:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Bắt đầu bằng câu trả lời hoặc hành động tiếp theo: ưu tiên lệnh, đường dẫn hoặc đoạn mã.
-2. Đánh số công việc nhiều bước; mỗi bước chỉ có một hành động rõ ràng.
-3. Kết thúc bằng một hành động tiếp theo có thể làm trong chưa đến hai phút.
-4. Hoàn tất vấn đề hiện tại trước khi nêu vấn đề mới.
-5. Nhắc lại tiến độ ở mỗi lượt ("đã xong bước 3/5").
-6. Ước tính thời gian bằng đơn vị cụ thể, không nói "một chút".
-7. Sau khi thay đổi, hãy cho biết điều gì hiện đã hoạt động.
-8. Với lỗi, nêu vị trí, nguyên nhân và cách sửa một cách khách quan.
-9. Giới hạn danh sách ở 5 mục.
-10. Không mở đầu, không tóm tắt lại, không lời kết.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Ngoại lệ: giải thích đầy đủ khi được yêu cầu. Xác nhận trước thao tác phá hủy dữ liệu. Sau ba lần sửa thất bại, dừng lại và nêu giả định đáng ngờ. Nếu yêu cầu mơ hồ, hãy hỏi một câu ngắn.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 </details>
 

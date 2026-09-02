@@ -35,22 +35,22 @@ agy plugin uninstall i-have-adhd
 `~/.gemini/GEMINI.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -145,22 +145,22 @@ codex plugin marketplace remove i-have-adhd
 `~/.codex/AGENTS.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -267,22 +267,22 @@ Copilot は `disable-model-invocation` を尊重します。Claude Code と同�
 以下のブロックをプロジェクトの `.github/copilot-instructions.md` に追加します（Copilot はすべてのチャットでこれを読み込みます）：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -331,22 +331,22 @@ tap も削除する場合は、`hermes skills tap remove steny138/i-have-adhd` �
 作業ディレクトリの `AGENTS.md`（Hermes が作業ディレクトリごとに読み込みます）、または全セッション用のペルソナ `SOUL.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -432,22 +432,22 @@ npx skills remove i-have-adhd
 プロジェクトの `AGENTS.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -533,22 +533,22 @@ Skills マネージャーから `i-have-adhd` を削除するか、`~/.config/ze
 個人用の `~/.config/zed/AGENTS.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -603,22 +603,22 @@ npx skills remove i-have-adhd -g    # グローバルにインストールした
 これをエージェントの永続ルールファイルに貼り付けます。Cursor：**Settings → Rules → User Rules**、または `.cursor/rules/` 配下のプロジェクトルールで `alwaysApply: true` を指定します。OpenCode：`~/.config/opencode/AGENTS.md`。
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 </details>
 

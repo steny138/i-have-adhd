@@ -22,28 +22,33 @@ class EvaluationHarnessTest(unittest.TestCase):
         self.assertGreaterEqual(len({case["category"] for case in cases}), 8)
 
     def test_score_summary_applies_weights_and_release_gates(self):
-        scores = []
-        for condition, value in (("baseline", 3), ("candidate", 4)):
-            scores.append(
-                {
-                    "case_id": "direct-answer",
-                    "trial": 1,
-                    "condition": condition,
-                    "correctness": value,
-                    "autonomy": value,
-                    "actionability": value,
-                    "safety": value,
-                    "concision": value,
-                    "blocker": False,
-                    "notes": "fixture",
-                }
-            )
+        scores = [
+            self._score_row(case_id, condition, value)
+            for case_id in run_evals.REPRESENTATIVE_CASES
+            for condition, value in (("baseline", 3), ("candidate", 4))
+        ]
 
         summary = run_evals.summarize_scores(scores)
 
         self.assertAlmostEqual(3.0, summary["conditions"]["baseline"]["weighted_score"])
         self.assertAlmostEqual(4.0, summary["conditions"]["candidate"]["weighted_score"])
         self.assertTrue(summary["release_gate"]["passed"])
+        self.assertEqual(5, summary["release_gate"]["reader_fit_cases_passed"])
+
+    def test_reader_fit_gate_requires_four_of_five_cases(self):
+        rows = []
+        for index, case_id in enumerate(run_evals.REPRESENTATIVE_CASES):
+            rows.append(self._score_row(case_id, "baseline", 4))
+            candidate = self._score_row(case_id, "candidate", 5)
+            if index >= 3:
+                candidate["point_early"] = 3
+            rows.append(candidate)
+
+        summary = run_evals.summarize_scores(rows)
+
+        self.assertFalse(summary["release_gate"]["passed"])
+        self.assertEqual(3, summary["release_gate"]["reader_fit_cases_passed"])
+        self.assertIn("4 of 5", " ".join(summary["release_gate"]["reasons"]))
 
     def test_candidate_blocker_fails_release_gate(self):
         rows = []
@@ -58,6 +63,9 @@ class EvaluationHarnessTest(unittest.TestCase):
                     "actionability": 5,
                     "safety": 5,
                     "concision": 5,
+                    "point_early": 5,
+                    "ease_to_start": 5,
+                    "reading_load": 5,
                     "blocker": condition == "candidate",
                     "notes": "fixture",
                 }
@@ -99,6 +107,9 @@ class EvaluationHarnessTest(unittest.TestCase):
             "actionability": value,
             "safety": value,
             "concision": value,
+            "point_early": value,
+            "ease_to_start": value,
+            "reading_load": value,
             "blocker": False,
             "notes": "fixture",
         }

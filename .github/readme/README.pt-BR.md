@@ -24,7 +24,7 @@
 
 ## O que ela faz
 
-Uma skill para o seu assistente de código que impede que ele enterre a resposta. Ação primeiro. Passos numerados. Nada de "Espero ter ajudado!"
+Uma skill que coloca primeiro o resultado verificado, a decisão necessária ou a próxima ação sem ocultar evidências ou limites de segurança. Nada de "Espero ter ajudado!"
 
 
 ## O que muda
@@ -44,13 +44,12 @@ Uma skill para o seu assistente de código que impede que ele enterre a resposta
 
 ## Depois
 
-> Rode `npm install jsonwebtoken@latest` e depois edite `src/auth.ts:42`.
+> A falha de autenticação está em `src/auth.ts:42`: `verifyToken` usa uma API antiga do `jsonwebtoken`. Nenhuma alteração foi feita ainda.
 >
-> 1. Abra `src/auth.ts`
-> 2. Substitua `verifyToken` (linhas 42–58) pelo trecho abaixo
-> 3. Rode `npm test -- auth.spec.ts`
+> - Evidência: a verificação do token falha nesse ponto de chamada.
+> - Risco: a versão de destino compatível ainda não foi confirmada.
 >
-> Próximo passo: cole a primeira linha de falha se algum teste quebrar.
+> Próximo passo: confirme a versão compatível do `jsonwebtoken` antes de atualizar a dependência e executar `npm test -- auth.spec.ts`.
 
 </td>
 </tr>
@@ -61,16 +60,16 @@ Uma skill para o seu assistente de código que impede que ele enterre a resposta
 
 10 regras. Texto completo no [SKILL.md](../../skills/i-have-adhd/SKILL.md).
 
-1. Comece pela próxima ação.
-2. Numere tarefas de múltiplos passos.
-3. Termine com um próximo passo concreto.
-4. Corte as tangentes.
-5. Reafirme o estado atual a cada turno.
-6. Estimativas de tempo específicas (minutos, não "um pouco").
-7. Deixe as conquistas visíveis.
-8. Erros relatados de forma objetiva.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo. Sem recapitulação. Sem frases de encerramento.
+1. Comece pelo resultado verificado, pela decisão necessária ou pela próxima ação.
+2. Acrescente evidências, incógnitas, riscos e validação quando forem relevantes.
+3. Numere apenas ações que precisam ocorrer em sequência.
+4. Mantenha completas as informações importantes e confira as contagens do resumo com os itens de origem.
+5. Reponha o estado somente quando for útil e não invente uma próxima tarefa após a conclusão.
+6. Estime tempo somente quando ele afetar a decisão e houver base confiável.
+7. Torne visíveis a conclusão e o resultado da validação.
+8. Relate erros objetivamente e diferencie causas confirmadas de hipóteses.
+9. Controle tangentes sem ocultar questões secundárias importantes.
+10. Remova preâmbulos e repetições; encerre quando a resposta estiver completa.
 
 ## Personalize
 

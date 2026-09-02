@@ -35,22 +35,22 @@ Ou mantenha instalado e desative: `agy plugin disable i-have-adhd`.
 Adicione ao `~/.gemini/GEMINI.md`:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -145,22 +145,22 @@ codex plugin marketplace remove i-have-adhd
 Adicione ao `~/.codex/AGENTS.md`:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -267,22 +267,22 @@ O Copilot respeita `disable-model-invocation`: nada é aplicado até você invoc
 Adicione o bloco abaixo ao `.github/copilot-instructions.md` do projeto (o Copilot o lê em todo chat):
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -331,22 +331,22 @@ Ou remova também o tap: `hermes skills tap remove steny138/i-have-adhd`.
 Adicione ao `AGENTS.md` do diretório de trabalho (o Hermes o carrega por diretório) ou ao `SOUL.md` da sua persona para todas as sessões:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -432,22 +432,22 @@ Ou exclua `~/.pi/agent/skills/i-have-adhd`.
 Adicione ao `AGENTS.md` do projeto:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -533,22 +533,22 @@ Remova `i-have-adhd` do gerenciador de Skills ou exclua `~/.config/zed/skills/i-
 Adicione ao seu `~/.config/zed/AGENTS.md` pessoal:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -603,22 +603,22 @@ npx skills remove i-have-adhd -g    # se instalado globalmente
 Cole isto no arquivo de regras persistentes do agente. Cursor: **Settings → Rules → User Rules**, ou uma regra de projeto em `.cursor/rules/` com `alwaysApply: true`. OpenCode: `~/.config/opencode/AGENTS.md`.
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 </details>
 
