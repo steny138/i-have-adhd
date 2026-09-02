@@ -24,7 +24,7 @@
 
 ## Skill này làm gì
 
-Một skill dành cho trợ lý lập trình, giúp câu trả lời đi thẳng vào trọng tâm thay vì bị chôn vùi trong những đoạn văn dài. Hành động trước. Đánh số các bước. Không có câu “Hy vọng điều này hữu ích!”
+Một skill đưa kết quả đã xác minh, quyết định cần thiết hoặc hành động tiếp theo lên trước mà không che khuất bằng chứng hay giới hạn an toàn. Không có câu “Hy vọng điều này hữu ích!”
 
 
 ## Những gì thay đổi
@@ -44,13 +44,12 @@ Một skill dành cho trợ lý lập trình, giúp câu trả lời đi thẳng
 
 ## Sau khi dùng
 
-> Chạy `npm install jsonwebtoken@latest`, sau đó sửa `src/auth.ts:42`.
+> Lỗi xác thực nằm ở `src/auth.ts:42`: `verifyToken` đang dùng API `jsonwebtoken` cũ. Chưa có thay đổi nào được thực hiện.
 >
-> 1. Mở `src/auth.ts`
-> 2. Thay thế `verifyToken` (dòng 42–58) bằng đoạn mã bên dưới
-> 3. Chạy `npm test -- auth.spec.ts`
+> - Bằng chứng: việc xác minh token thất bại tại điểm gọi này.
+> - Rủi ro: phiên bản đích tương thích chưa được xác nhận.
 >
-> Bước tiếp theo: dán dòng báo lỗi đầu tiên nếu có bài kiểm tra nào thất bại.
+> Bước tiếp theo: xác nhận phiên bản `jsonwebtoken` được hỗ trợ trước khi cập nhật dependency và chạy `npm test -- auth.spec.ts`.
 
 </td>
 </tr>
@@ -61,16 +60,16 @@ Một skill dành cho trợ lý lập trình, giúp câu trả lời đi thẳng
 
 10 quy tắc. Nội dung chi tiết tại [SKILL.md](../../skills/i-have-adhd/SKILL.md).
 
-1. Bắt đầu ngay bằng hành động tiếp theo.
-2. Đánh số các công việc gồm nhiều bước.
-3. Kết thúc bằng một bước tiếp theo cụ thể.
-4. Loại bỏ các nội dung lan man.
-5. Nhắc lại trạng thái hiện tại ở mỗi lượt.
-6. Ước tính thời gian cụ thể (tính bằng phút, không nói chung chung).
-7. Làm nổi bật những kết quả đã đạt được.
-8. Báo lỗi một cách khách quan, thẳng thắn.
-9. Giới hạn danh sách tối đa 5 mục.
-10. Không lời mở đầu. Không tóm tắt. Không lời chào kết.
+1. Đưa kết quả đã xác minh, quyết định cần thiết hoặc hành động tiếp theo lên trước.
+2. Bổ sung bằng chứng, điều chưa biết, rủi ro và kết quả xác minh khi cần.
+3. Chỉ đánh số những hành động phải thực hiện theo thứ tự.
+4. Giữ đầy đủ mọi thông tin quan trọng và đối chiếu số lượng trong phần tóm tắt với các mục nguồn.
+5. Chỉ nhắc lại trạng thái khi hữu ích và không tạo nhiệm vụ tiếp theo sau khi đã hoàn tất.
+6. Chỉ ước tính khi thời gian ảnh hưởng đến quyết định và có cơ sở đáng tin cậy.
+7. Làm rõ nội dung đã hoàn tất và kết quả xác minh.
+8. Báo lỗi khách quan, phân biệt nguyên nhân đã xác nhận với giả thuyết.
+9. Kiểm soát nội dung lan man mà không che giấu vấn đề phụ quan trọng.
+10. Loại bỏ mở đầu và lặp lại không cần thiết; kết thúc khi câu trả lời đã đủ.
 
 ## Tùy chỉnh
 

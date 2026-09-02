@@ -6,7 +6,7 @@
 ### インストール
 
 ```bash
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/steny138/i-have-adhd
 ```
 
 ### 確認
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall i-have-adhd
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/steny138/i-have-adhd
 ```
 
 ### アンインストール
@@ -35,22 +35,22 @@ agy plugin uninstall i-have-adhd
 `~/.gemini/GEMINI.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -61,7 +61,7 @@ agy plugin uninstall i-have-adhd
 ### インストール
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
+claude plugin marketplace add steny138/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
@@ -113,7 +113,7 @@ rm ~/.claude/.i-have-adhd-always
 ### インストール
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
+codex plugin marketplace add steny138/i-have-adhd --ref main
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
@@ -145,22 +145,22 @@ codex plugin marketplace remove i-have-adhd
 `~/.codex/AGENTS.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -174,7 +174,7 @@ Gemini CLI にはプラグインマーケットプレイスがないため、ネ
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/steny138/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
   -o ~/.gemini/commands/i-have-adhd.toml
 ```
 
@@ -183,7 +183,7 @@ curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-ha
 ### インストール (extension, always-on)
 
 ```bash
-gemini extensions install https://github.com/ayghri/i-have-adhd
+gemini extensions install https://github.com/steny138/i-have-adhd
 ```
 
 拡張機能は完全なスキルをインポートする `GEMINI.md` を読み込むため、最初のメッセージからルールが適用されます。`git` のインストールが必要です。
@@ -221,14 +221,14 @@ Copilot は Agent Skills をネイティブに読み取るため、同じ `SKILL
 ### インストール
 
 ```bash
-npx skills add ayghri/i-have-adhd -a github-copilot        # このプロジェクト
-npx skills add ayghri/i-have-adhd -a github-copilot -g     # すべてのプロジェクト
+npx skills add steny138/i-have-adhd -a github-copilot        # このプロジェクト
+npx skills add steny138/i-have-adhd -a github-copilot -g     # すべてのプロジェクト
 ```
 
 CLI を使わない場合は、Copilot が検索するいずれかのディレクトリにスキルフォルダーをコピーします：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.copilot/skills/
 ```
@@ -267,22 +267,22 @@ Copilot は `disable-model-invocation` を尊重します。Claude Code と同�
 以下のブロックをプロジェクトの `.github/copilot-instructions.md` に追加します（Copilot はすべてのチャットでこれを読み込みます）：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -293,7 +293,7 @@ Copilot は `disable-model-invocation` を尊重します。Claude Code と同�
 ### インストール
 
 ```bash
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install steny138/i-have-adhd/skills/i-have-adhd
 ```
 
 `/i-have-adhd` と入力します。 The skill installs into `~/.hermes/skills/` and is exposed as a slash command at the next session start.
@@ -301,9 +301,9 @@ hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
 先に内容を確認したい場合は、このリポジトリをスキルソース（「tap」）として追加してから、検索してインストールします：
 
 ```bash
-hermes skills tap add ayghri/i-have-adhd
+hermes skills tap add steny138/i-have-adhd
 hermes skills search adhd
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install steny138/i-have-adhd/skills/i-have-adhd
 ```
 
 ### 確認
@@ -324,29 +324,29 @@ hermes skills update i-have-adhd
 hermes skills uninstall i-have-adhd
 ```
 
-tap も削除する場合は、`hermes skills tap remove ayghri/i-have-adhd` を実行します。
+tap も削除する場合は、`hermes skills tap remove steny138/i-have-adhd` を実行します。
 
 ### 常時有効（任意）
 
 作業ディレクトリの `AGENTS.md`（Hermes が作業ディレクトリごとに読み込みます）、または全セッション用のペルソナ `SOUL.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -360,7 +360,7 @@ Kimi Code セッションを開始してから、次を実行します：
 
 1. `/plugins` を実行する。
 2. **Custom** を選ぶ。
-3. `https://github.com/ayghri/i-have-adhd` を貼り付けて Enter を押す。
+3. `https://github.com/steny138/i-have-adhd` を貼り付けて Enter を押す。
 4. **Trust and install** を選ぶ。
 
 slash コマンド `/skill:i-have-adhd` を使って、このスキルを明示的に呼び出します。
@@ -384,13 +384,13 @@ Pi は Agent Skills 標準を実装しているため、同じ `SKILL.md` を変
 ### インストール
 
 ```bash
-npx skills add ayghri/i-have-adhd -a pi -y
+npx skills add steny138/i-have-adhd -a pi -y
 ```
 
 ファイルシステムを使う場合、Pi は `~/.pi/agent/skills/` と `~/.agents/skills/`（グローバル）、`.pi/skills/` と `.agents/skills/`（プロジェクト）からスキルを検出します：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.pi/agent/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.pi/agent/skills/
 ```
@@ -432,22 +432,22 @@ npx skills remove i-have-adhd
 プロジェクトの `AGENTS.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -459,7 +459,7 @@ npx skills remove i-have-adhd
 ### インストール
 
 ```bash
-qwen extensions install ayghri/i-have-adhd
+qwen extensions install steny138/i-have-adhd
 ```
 
 Qwen Code は GitHub の短縮表記をサポートし、このリポジトリをネイティブ拡張機能としてインストールします。拡張機能は `skills/` 配下のスキルを検出します。
@@ -504,7 +504,7 @@ Zed の Agent は Agent Skills をネイティブに読み取るため、同じ 
 Agent Panel で Skills マネージャーを開き、**Create skill from URL**（コマンドパレットでは `agent: create skill from url`）を選択して、次を貼り付けます：
 
 ```
-https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
+https://github.com/steny138/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
 ```
 
 すべてのプロジェクトで使う場合は **User** スコープ、1 つだけなら **Project** スコープに保存します。その後、Agent Panel で `/i-have-adhd` と入力します。
@@ -512,7 +512,7 @@ https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
 ファイルシステムを使う場合は、リポジトリをクローンし、ユーザーの skills ディレクトリにスキルフォルダーを配置します：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 cp -R i-have-adhd/skills/i-have-adhd ~/.config/zed/skills/
 ```
 
@@ -533,22 +533,22 @@ Skills マネージャーから `i-have-adhd` を削除するか、`~/.config/ze
 個人用の `~/.config/zed/AGENTS.md` に追加します：
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -561,10 +561,10 @@ Agent Skills を読み取るすべての環境で動作します。`-a <agent>` 
 ### インストール
 
 ```bash
-npx skills add ayghri/i-have-adhd                  # this workspace
-npx skills add ayghri/i-have-adhd -g               # すべてのプロジェクト
-npx skills add ayghri/i-have-adhd -a cursor -y     # one agent only
-npx skills add ayghri/i-have-adhd -a opencode -y
+npx skills add steny138/i-have-adhd                  # this workspace
+npx skills add steny138/i-have-adhd -g               # すべてのプロジェクト
+npx skills add steny138/i-have-adhd -a cursor -y     # one agent only
+npx skills add steny138/i-have-adhd -a opencode -y
 ```
 
 新しいエージェントチャットで `/i-have-adhd` と入力します。
@@ -572,7 +572,7 @@ npx skills add ayghri/i-have-adhd -a opencode -y
 CLI を使わない場合は、エージェントが検索するパスにスキルフォルダーをコピーします：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.cursor/skills     # Cursor。OpenCode は .agents/skills、その他はエージェント固有のパスを使用
 cp -R i-have-adhd/skills/i-have-adhd ~/.cursor/skills/
 ```
@@ -603,22 +603,22 @@ npx skills remove i-have-adhd -g    # グローバルにインストールした
 これをエージェントの永続ルールファイルに貼り付けます。Cursor：**Settings → Rules → User Rules**、または `.cursor/rules/` 配下のプロジェクトルールで `alwaysApply: true` を指定します。OpenCode：`~/.config/opencode/AGENTS.md`。
 
 ```markdown
-## 出力スタイル
+## Output style
 
-読み手には ADHD があります。すぐ行動に移せるよう、すべての回答を次のように構成してください：
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 回答または次の行動から始める。コマンド、パス、スニペットを先に示す。
-2. 複数手順の作業には番号を付け、1 ステップにつき 1 つの明確な行動にする。
-3. 2 分以内にできる次の行動を 1 つ示して終える。
-4. 新しい問題を挙げる前に、現在の問題を終わらせる。
-5. 各ターンで進捗を言い直す（「5 ステップ中 3 ステップ完了」）。
-6. 所要時間は具体的な単位で示し、「少し」とは言わない。
-7. 変更後は、何が動くようになったかを示す。
-8. エラーは場所、原因、修正方法を淡々と示す。
-9. リストは最大 5 項目にする。
-10. 前置き、要約、締めの言葉を入れない。
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-例外：説明を求められた場合は十分に説明する。破壊的な操作の前には確認する。修正に 3 回失敗したら止まり、疑わしい前提を明示する。依頼が曖昧なら短い質問を 1 つする。
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 </details>
 

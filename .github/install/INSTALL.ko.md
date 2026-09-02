@@ -6,7 +6,7 @@
 ### 설치
 
 ```bash
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/steny138/i-have-adhd
 ```
 
 ### 확인
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall i-have-adhd
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/steny138/i-have-adhd
 ```
 
 ### 제거
@@ -35,22 +35,22 @@ agy plugin uninstall i-have-adhd
 `~/.gemini/GEMINI.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -61,7 +61,7 @@ agy plugin uninstall i-have-adhd
 ### 설치
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
+claude plugin marketplace add steny138/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
@@ -113,7 +113,7 @@ rm ~/.claude/.i-have-adhd-always
 ### 설치
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
+codex plugin marketplace add steny138/i-have-adhd --ref main
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
@@ -145,22 +145,22 @@ codex plugin marketplace remove i-have-adhd
 `~/.codex/AGENTS.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -174,7 +174,7 @@ Gemini CLI에는 플러그인 마켓플레이스가 없어 두 가지 기본 방
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/steny138/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
   -o ~/.gemini/commands/i-have-adhd.toml
 ```
 
@@ -183,7 +183,7 @@ curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-ha
 ### 설치 (extension, always-on)
 
 ```bash
-gemini extensions install https://github.com/ayghri/i-have-adhd
+gemini extensions install https://github.com/steny138/i-have-adhd
 ```
 
 확장 프로그램은 전체 스킬을 가져오는 `GEMINI.md`를 불러오므로 첫 메시지부터 규칙이 적용됩니다. `git`이 설치되어 있어야 합니다.
@@ -221,14 +221,14 @@ Copilot은 Agent Skills를 기본 지원하므로 같은 `SKILL.md`를 변환 �
 ### 설치
 
 ```bash
-npx skills add ayghri/i-have-adhd -a github-copilot        # 이 프로젝트
-npx skills add ayghri/i-have-adhd -a github-copilot -g     # 모든 프로젝트
+npx skills add steny138/i-have-adhd -a github-copilot        # 이 프로젝트
+npx skills add steny138/i-have-adhd -a github-copilot -g     # 모든 프로젝트
 ```
 
 CLI 없이 설치하려면 스킬 폴더를 Copilot이 검색하는 디렉터리 중 하나에 복사하세요:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.copilot/skills/
 ```
@@ -267,22 +267,22 @@ Copilot은 `disable-model-invocation`을 따릅니다. Claude Code와 마찬가�
 아래 블록을 프로젝트의 `.github/copilot-instructions.md`에 추가하세요(Copilot이 모든 채팅에서 읽습니다):
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -293,7 +293,7 @@ Copilot은 `disable-model-invocation`을 따릅니다. Claude Code와 마찬가�
 ### 설치
 
 ```bash
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install steny138/i-have-adhd/skills/i-have-adhd
 ```
 
 `/i-have-adhd`를 입력하세요. The skill installs into `~/.hermes/skills/` and is exposed as a slash command at the next session start.
@@ -301,9 +301,9 @@ hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
 먼저 둘러보려면 이 저장소를 스킬 소스("tap")로 추가한 뒤 검색하고 설치하세요:
 
 ```bash
-hermes skills tap add ayghri/i-have-adhd
+hermes skills tap add steny138/i-have-adhd
 hermes skills search adhd
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install steny138/i-have-adhd/skills/i-have-adhd
 ```
 
 ### 확인
@@ -324,29 +324,29 @@ hermes skills update i-have-adhd
 hermes skills uninstall i-have-adhd
 ```
 
-tap도 제거하려면 `hermes skills tap remove ayghri/i-have-adhd`를 실행하세요.
+tap도 제거하려면 `hermes skills tap remove steny138/i-have-adhd`를 실행하세요.
 
 ### 항상 활성화(선택 사항)
 
 작업 디렉터리의 `AGENTS.md`(Hermes가 작업 디렉터리별로 불러옴) 또는 모든 세션에 적용할 페르소나의 `SOUL.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -360,7 +360,7 @@ Kimi Code 세션을 시작한 뒤 다음을 수행하세요.
 
 1. `/plugins`를 실행합니다.
 2. **Custom**을 선택합니다.
-3. `https://github.com/ayghri/i-have-adhd`를 붙여넣고 Enter를 누릅니다.
+3. `https://github.com/steny138/i-have-adhd`를 붙여넣고 Enter를 누릅니다.
 4. **Trust and install**을 선택합니다.
 
 slash 명령 `/skill:i-have-adhd`로 이 스킬을 명시적으로 호출하세요.
@@ -384,13 +384,13 @@ Pi는 Agent Skills 표준을 구현하므로 같은 `SKILL.md`를 변환 없이 
 ### 설치
 
 ```bash
-npx skills add ayghri/i-have-adhd -a pi -y
+npx skills add steny138/i-have-adhd -a pi -y
 ```
 
 파일 시스템 방식을 선호한다면 Pi는 `~/.pi/agent/skills/`와 `~/.agents/skills/`(전역), `.pi/skills/`와 `.agents/skills/`(프로젝트)에서 스킬을 찾습니다:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.pi/agent/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.pi/agent/skills/
 ```
@@ -432,22 +432,22 @@ npx skills remove i-have-adhd
 프로젝트의 `AGENTS.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -459,7 +459,7 @@ npx skills remove i-have-adhd
 ### 설치
 
 ```bash
-qwen extensions install ayghri/i-have-adhd
+qwen extensions install steny138/i-have-adhd
 ```
 
 Qwen Code는 GitHub 축약 표기를 지원하며 이 저장소를 네이티브 확장으로 설치합니다. 확장은 `skills/` 아래의 스킬을 검색합니다.
@@ -504,7 +504,7 @@ Zed의 Agent는 Agent Skills를 기본 지원하므로 같은 `SKILL.md`를 변�
 Agent Panel에서 Skills 관리자를 열고 **Create skill from URL**(명령 팔레트에서는 `agent: create skill from url`)을 선택한 뒤 다음을 붙여넣으세요:
 
 ```
-https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
+https://github.com/steny138/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
 ```
 
 모든 프로젝트에서 사용하려면 **User** 범위에, 한 프로젝트에서만 사용하려면 **Project** 범위에 저장하세요. 그런 다음 Agent Panel에서 `/i-have-adhd`를 입력하세요.
@@ -512,7 +512,7 @@ https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
 파일 시스템 방식을 선호한다면 저장소를 클론하고 스킬 폴더를 사용자 skills 디렉터리에 넣으세요:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 cp -R i-have-adhd/skills/i-have-adhd ~/.config/zed/skills/
 ```
 
@@ -533,22 +533,22 @@ Skills 관리자에서 `i-have-adhd`를 제거하거나 `~/.config/zed/skills/i-
 개인 `~/.config/zed/AGENTS.md`에 추가하세요:
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -561,10 +561,10 @@ Agent Skills를 읽는 모든 실행 환경에서 작동합니다. `-a <agent>`�
 ### 설치
 
 ```bash
-npx skills add ayghri/i-have-adhd                  # this workspace
-npx skills add ayghri/i-have-adhd -g               # 모든 프로젝트
-npx skills add ayghri/i-have-adhd -a cursor -y     # one agent only
-npx skills add ayghri/i-have-adhd -a opencode -y
+npx skills add steny138/i-have-adhd                  # this workspace
+npx skills add steny138/i-have-adhd -g               # 모든 프로젝트
+npx skills add steny138/i-have-adhd -a cursor -y     # one agent only
+npx skills add steny138/i-have-adhd -a opencode -y
 ```
 
 새 에이전트 채팅에서 `/i-have-adhd`를 입력하세요.
@@ -572,7 +572,7 @@ npx skills add ayghri/i-have-adhd -a opencode -y
 CLI 없이 설치하려면 에이전트가 검색하는 경로에 스킬 폴더를 복사하세요:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.cursor/skills     # Cursor. OpenCode는 .agents/skills, 다른 에이전트는 자체 경로 사용
 cp -R i-have-adhd/skills/i-have-adhd ~/.cursor/skills/
 ```
@@ -603,22 +603,22 @@ npx skills remove i-have-adhd -g    # 전역 설치한 경우
 에이전트의 영구 규칙 파일에 다음을 붙여넣으세요. Cursor: **Settings → Rules → User Rules** 또는 `.cursor/rules/` 아래 `alwaysApply: true`인 프로젝트 규칙. OpenCode: `~/.config/opencode/AGENTS.md`.
 
 ```markdown
-## 출력 스타일
+## Output style
 
-읽는 사람은 ADHD가 있습니다. 모든 답변을 바로 실행할 수 있도록 구성하세요:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. 답이나 다음 행동부터 제시하세요. 명령어, 경로 또는 코드 조각을 먼저 보여 주세요.
-2. 여러 단계의 작업에는 번호를 붙이고, 단계마다 범위가 명확한 행동 하나만 두세요.
-3. 2분 안에 할 수 있는 다음 행동 하나로 끝내세요.
-4. 새 문제를 꺼내기 전에 현재 문제를 마무리하세요.
-5. 매 턴마다 진행 상황을 다시 알려 주세요("5단계 중 3단계 완료").
-6. 시간은 구체적인 단위로 예상하고 "조금"이라고 하지 마세요.
-7. 변경 후에는 이제 무엇이 작동하는지 보여 주세요.
-8. 오류는 위치, 원인, 해결 방법을 담담하게 알려 주세요.
-9. 목록은 최대 5개 항목으로 제한하세요.
-10. 서론, 요약, 마무리 인사를 넣지 마세요.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-예외: 설명을 요청받으면 충분히 설명하세요. 파괴적인 작업 전에는 확인하세요. 세 번의 수정이 실패하면 멈추고 의심되는 가정을 밝히세요. 요청이 모호하면 짧은 질문 하나를 하세요.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 </details>
 

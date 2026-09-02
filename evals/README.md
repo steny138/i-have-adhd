@@ -43,10 +43,17 @@ Runs are resumable: rerun the same command after a provider failure and complete
 Blind the `condition` field before judging. Write one JSON object per response with these fields:
 
 ```json
-{"case_id":"direct-answer","trial":1,"condition":"candidate","correctness":5,"autonomy":5,"actionability":5,"safety":5,"concision":5,"blocker":false,"notes":"Direct and correct."}
+{"case_id":"research-decision","trial":1,"condition":"candidate","correctness":5,"autonomy":5,"actionability":5,"safety":5,"concision":5,"point_early":5,"ease_to_start":5,"reading_load":5,"blocker":false,"notes":"Recommendation and mandatory constraint appear first."}
 ```
 
-Then apply the release gate:
+The three reader-fit fields measure the approved customization directly:
+
+- `point_early`: the answer, decision, or required action appears immediately.
+- `ease_to_start`: the response makes the first useful action or decision easy.
+- `reading_load`: structure reduces effort without omitting material information.
+
+Score the five representative cases named by the harness: research, diagnosis,
+approval, progress, and breaking-change inventory. Then apply the release gate:
 
 ```bash
 python3 scripts/run_evals.py score evals/results/scores.jsonl

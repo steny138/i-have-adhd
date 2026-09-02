@@ -23,14 +23,14 @@
 Copy/paste into your CLI prompt:
 
 ```text
-Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.
+Install the i-have-adhd skill/plugin from https://github.com/steny138/i-have-adhd, refer to the repo's AGENTS.md for instructions.
 ```
 
 Or 🔗 [check the installation instructions](INSTALL.md).
 
 ## What it does
 
-A skill for your coding assistant that stops it from burying the answer. Action first. Steps numbered. No "Hope this helps!"
+A skill for your coding assistant that surfaces the verified outcome, decision, or next action without hiding evidence or safety constraints. No "Hope this helps!"
 
 
 ## What changes
@@ -50,13 +50,12 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 ## After
 
-> Run `npm install jsonwebtoken@latest`, then edit `src/auth.ts:42`.
+> The auth failure is in `src/auth.ts:42`: `verifyToken` uses an older `jsonwebtoken` API. No change has been made yet.
 >
-> 1. Open `src/auth.ts`
-> 2. Replace `verifyToken` (lines 42–58) with the snippet below
-> 3. Run `npm test -- auth.spec.ts`
+> - Evidence: token verification fails at that call site.
+> - Risk: the compatible target version is not yet verified.
 >
-> Next: paste the first failing line if any test fails.
+> Next: confirm the supported `jsonwebtoken` version before updating the dependency and running `npm test -- auth.spec.ts`.
 
 </td>
 </tr>
@@ -67,16 +66,16 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 10 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
 
-1. Lead with the next action.
-2. Number multi-step tasks.
-3. End with one concrete next step.
-4. Suppress tangents.
-5. Restate state every turn.
-6. Specific time estimates (minutes, not "a bit").
-7. Make wins visible.
-8. Matter-of-fact errors.
-9. Cap lists at 5 items.
-10. No preamble. No recap. No closers.
+1. Put the verified outcome, decision, or next action first.
+2. Layer supporting evidence, unknowns, risks, and validation.
+3. Number only ordered action sequences.
+4. Keep material information complete and verify summary counts.
+5. Restore state only when useful; omit next when nothing remains.
+6. Estimate only from reliable evidence when timing matters.
+7. Make completion and verification visible.
+8. Report errors plainly and separate proven from unproven causes.
+9. Control tangents without hiding material side issues.
+10. Remove filler and end when the answer is complete.
 
 ## Tune it
 

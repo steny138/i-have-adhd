@@ -6,7 +6,7 @@
 ### Instalar
 
 ```bash
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/steny138/i-have-adhd
 ```
 
 ### Verificar
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall i-have-adhd
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/steny138/i-have-adhd
 ```
 
 ### Desinstalar
@@ -35,22 +35,22 @@ Ou mantenha instalado e desative: `agy plugin disable i-have-adhd`.
 Adicione ao `~/.gemini/GEMINI.md`:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -61,7 +61,7 @@ Exceções: explique por completo quando pedirem. Confirme antes de ações dest
 ### Instalar
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
+claude plugin marketplace add steny138/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
@@ -113,7 +113,7 @@ O hook só é executado quando o arquivo de sinalização existe, portanto insta
 ### Instalar
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
+codex plugin marketplace add steny138/i-have-adhd --ref main
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
@@ -145,22 +145,22 @@ codex plugin marketplace remove i-have-adhd
 Adicione ao `~/.codex/AGENTS.md`:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -174,7 +174,7 @@ O Gemini CLI não tem marketplace de plugins, então há duas opções nativas: 
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/steny138/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
   -o ~/.gemini/commands/i-have-adhd.toml
 ```
 
@@ -183,7 +183,7 @@ Inicie uma nova sessão e digite `/i-have-adhd`. A skill permanecerá ativa dura
 ### Instalar (extension, always-on)
 
 ```bash
-gemini extensions install https://github.com/ayghri/i-have-adhd
+gemini extensions install https://github.com/steny138/i-have-adhd
 ```
 
 A extensão carrega `GEMINI.md`, que importa a skill completa; assim, as regras valem desde a primeira mensagem. O `git` precisa estar instalado.
@@ -221,14 +221,14 @@ O Copilot lê Agent Skills nativamente: usa o mesmo `SKILL.md`, sem conversão. 
 ### Instalar
 
 ```bash
-npx skills add ayghri/i-have-adhd -a github-copilot        # este projeto
-npx skills add ayghri/i-have-adhd -a github-copilot -g     # todos os projetos
+npx skills add steny138/i-have-adhd -a github-copilot        # este projeto
+npx skills add steny138/i-have-adhd -a github-copilot -g     # todos os projetos
 ```
 
 Sem a CLI, copie a pasta da skill para qualquer diretório verificado pelo Copilot:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.copilot/skills/
 ```
@@ -267,22 +267,22 @@ O Copilot respeita `disable-model-invocation`: nada é aplicado até você invoc
 Adicione o bloco abaixo ao `.github/copilot-instructions.md` do projeto (o Copilot o lê em todo chat):
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -293,7 +293,7 @@ Exceções: explique por completo quando pedirem. Confirme antes de ações dest
 ### Instalar
 
 ```bash
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install steny138/i-have-adhd/skills/i-have-adhd
 ```
 
 Digite `/i-have-adhd`. The skill installs into `~/.hermes/skills/` and is exposed as a slash command at the next session start.
@@ -301,9 +301,9 @@ Digite `/i-have-adhd`. The skill installs into `~/.hermes/skills/` and is expose
 Prefere explorar primeiro? Adicione este repositório como fonte de skills (um "tap"), depois pesquise e instale:
 
 ```bash
-hermes skills tap add ayghri/i-have-adhd
+hermes skills tap add steny138/i-have-adhd
 hermes skills search adhd
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install steny138/i-have-adhd/skills/i-have-adhd
 ```
 
 ### Verificar
@@ -324,29 +324,29 @@ hermes skills update i-have-adhd
 hermes skills uninstall i-have-adhd
 ```
 
-Ou remova também o tap: `hermes skills tap remove ayghri/i-have-adhd`.
+Ou remova também o tap: `hermes skills tap remove steny138/i-have-adhd`.
 
 ### Sempre ativo (opcional)
 
 Adicione ao `AGENTS.md` do diretório de trabalho (o Hermes o carrega por diretório) ou ao `SOUL.md` da sua persona para todas as sessões:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -360,7 +360,7 @@ Inicie uma sessão do Kimi Code e:
 
 1. Execute `/plugins`.
 2. Selecione **Custom**.
-3. Cole `https://github.com/ayghri/i-have-adhd` e pressione Enter.
+3. Cole `https://github.com/steny138/i-have-adhd` e pressione Enter.
 4. Selecione **Trust and install**.
 
 Use o comando slash `/skill:i-have-adhd` para invocar a skill explicitamente.
@@ -384,13 +384,13 @@ O Pi implementa o padrão Agent Skills, portanto o mesmo `SKILL.md` é carregado
 ### Instalar
 
 ```bash
-npx skills add ayghri/i-have-adhd -a pi -y
+npx skills add steny138/i-have-adhd -a pi -y
 ```
 
 Prefere usar o sistema de arquivos? O Pi encontra skills em `~/.pi/agent/skills/` e `~/.agents/skills/` (global), e em `.pi/skills/` e `.agents/skills/` (projeto):
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.pi/agent/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.pi/agent/skills/
 ```
@@ -432,22 +432,22 @@ Ou exclua `~/.pi/agent/skills/i-have-adhd`.
 Adicione ao `AGENTS.md` do projeto:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -459,7 +459,7 @@ Exceções: explique por completo quando pedirem. Confirme antes de ações dest
 ### Instalar
 
 ```bash
-qwen extensions install ayghri/i-have-adhd
+qwen extensions install steny138/i-have-adhd
 ```
 
 O Qwen Code aceita a forma abreviada do GitHub e instala o repositório como extensão nativa. A extensão encontra a skill em `skills/`.
@@ -504,7 +504,7 @@ O Agent do Zed lê Agent Skills nativamente: usa o mesmo `SKILL.md`, sem convers
 No Agent Panel, abra o gerenciador de Skills, escolha **Create skill from URL** (também disponível na paleta como `agent: create skill from url`) e cole:
 
 ```
-https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
+https://github.com/steny138/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
 ```
 
 Salve no escopo **User** para todos os projetos ou **Project** para apenas um. Depois, digite `/i-have-adhd` no Agent Panel.
@@ -512,7 +512,7 @@ Salve no escopo **User** para todos os projetos ou **Project** para apenas um. D
 Prefere o sistema de arquivos? Clone o repositório e coloque a pasta da skill no diretório de skills do usuário:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 cp -R i-have-adhd/skills/i-have-adhd ~/.config/zed/skills/
 ```
 
@@ -533,22 +533,22 @@ Remova `i-have-adhd` do gerenciador de Skills ou exclua `~/.config/zed/skills/i-
 Adicione ao seu `~/.config/zed/AGENTS.md` pessoal:
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 
 </details>
@@ -561,10 +561,10 @@ Funciona com qualquer ambiente que leia Agent Skills. Troque `-a <agent>` pelo s
 ### Instalar
 
 ```bash
-npx skills add ayghri/i-have-adhd                  # this workspace
-npx skills add ayghri/i-have-adhd -g               # todos os projetos
-npx skills add ayghri/i-have-adhd -a cursor -y     # one agent only
-npx skills add ayghri/i-have-adhd -a opencode -y
+npx skills add steny138/i-have-adhd                  # this workspace
+npx skills add steny138/i-have-adhd -g               # todos os projetos
+npx skills add steny138/i-have-adhd -a cursor -y     # one agent only
+npx skills add steny138/i-have-adhd -a opencode -y
 ```
 
 Abra um novo chat do agente e digite `/i-have-adhd`.
@@ -572,7 +572,7 @@ Abra um novo chat do agente e digite `/i-have-adhd`.
 Sem a CLI, copie a pasta da skill para o caminho verificado pelo seu agente:
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.cursor/skills     # Cursor. Use .agents/skills no OpenCode ou o caminho próprio do agente
 cp -R i-have-adhd/skills/i-have-adhd ~/.cursor/skills/
 ```
@@ -603,22 +603,22 @@ npx skills remove i-have-adhd -g    # se instalado globalmente
 Cole isto no arquivo de regras persistentes do agente. Cursor: **Settings → Rules → User Rules**, ou uma regra de projeto em `.cursor/rules/` com `alwaysApply: true`. OpenCode: `~/.config/opencode/AGENTS.md`.
 
 ```markdown
-## Estilo de resposta
+## Output style
 
-A pessoa que lê tem TDAH. Estruture cada resposta para que ela possa agir:
+Make responses easy to scan and act on without sacrificing evidence or safety.
 
-1. Comece pela resposta ou próxima ação: comando, caminho ou trecho de código primeiro.
-2. Numere trabalhos com várias etapas; uma ação bem delimitada por etapa.
-3. Termine com uma próxima ação que possa ser feita em menos de dois minutos.
-4. Conclua o problema atual antes de levantar outro.
-5. Reafirme o progresso a cada turno ("etapa 3 de 5 concluída").
-6. Dê estimativas de tempo em unidades concretas, nunca "um pouco".
-7. Após uma alteração, mostre o que agora funciona.
-8. Erros: informe local, causa e correção, sem drama.
-9. Limite listas a 5 itens.
-10. Sem preâmbulo, recapitulação ou despedida.
+1. Put the right thing first: verified outcome or current state for completed work, research, reviews, diagnoses, and status; next action or required decision for open work. State when approval is required and no change was made.
+2. Give a short core answer, then relevant evidence, unknowns, risks, and validation.
+3. Number only actions that must happen in order; use bullets or tables for information.
+4. Keep material risks, unknown impact, breaking changes, approval boundaries, validation, and requested inventories complete. Verify summary counts against source items.
+5. Restore state only for multi-turn or long-running work, a state change, or an interruption. Include next only when work, input, or approval remains.
+6. Estimate only when timing matters and a reliable basis exists; give a range and assumptions.
+7. Make completion and verification visible; do not invent another task.
+8. Report errors plainly: location, confirmed immediate cause, and fix; label an unproven root cause.
+9. Finish the current issue first; mention unrelated issues only when they create material risk.
+10. Remove preambles, duplicated recaps, filler, and closers; end when complete.
 
-Exceções: explique por completo quando pedirem. Confirme antes de ações destrutivas. Após três tentativas de correção sem sucesso, pare e identifique a suposição duvidosa. Se o pedido for ambíguo, faça uma pergunta curta.
+Honor requested detail, output formats, and the established language. Safety and higher-priority instructions override brevity. Confirm destructive actions. Ask one concise question for material ambiguity. After three unsuccessful fixes, identify the assumption that may be wrong. This style does not diagnose ADHD.
 ```
 </details>
 

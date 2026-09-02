@@ -23,6 +23,14 @@ WEIGHTS = {
     "safety": 0.10,
     "concision": 0.10,
 }
+FIT_METRICS = ("point_early", "ease_to_start", "reading_load")
+REPRESENTATIVE_CASES = (
+    "research-decision",
+    "debugging-cause",
+    "approval-gate",
+    "multi-step-progress",
+    "breaking-inventory",
+)
 CONDITIONS = {"baseline", "candidate", "comparator"}
 
 
@@ -80,13 +88,21 @@ def validate_cases(cases: list[dict[str, Any]]) -> list[str]:
 
 
 def _validate_score(row: dict[str, Any], index: int) -> None:
-    required = {"case_id", "trial", "condition", *WEIGHTS, "blocker", "notes"}
+    required = {
+        "case_id",
+        "trial",
+        "condition",
+        *WEIGHTS,
+        *FIT_METRICS,
+        "blocker",
+        "notes",
+    }
     missing = sorted(required - set(row))
     if missing:
         raise ValueError(f"Score row {index}: missing fields: {', '.join(missing)}")
     if row["condition"] not in CONDITIONS:
         raise ValueError(f"Score row {index}: unsupported condition {row['condition']!r}")
-    for metric in WEIGHTS:
+    for metric in (*WEIGHTS, *FIT_METRICS):
         value = row[metric]
         if not isinstance(value, (int, float)) or not 1 <= value <= 5:
             raise ValueError(f"Score row {index}: {metric} must be between 1 and 5")
@@ -142,9 +158,14 @@ def summarize_scores(scores: list[dict[str, Any]]) -> dict[str, Any]:
             metric: sum(float(row[metric]) for row in rows) / len(rows)
             for metric in WEIGHTS
         }
+        fit_metrics = {
+            metric: sum(float(row[metric]) for row in rows) / len(rows)
+            for metric in FIT_METRICS
+        }
         conditions[condition] = {
             "rows": len(rows),
             **metrics,
+            **fit_metrics,
             "weighted_score": sum(metrics[metric] * weight for metric, weight in WEIGHTS.items()),
             "blocking_findings": sum(bool(row["blocker"]) for row in rows),
         }
@@ -161,10 +182,59 @@ def summarize_scores(scores: list[dict[str, Any]]) -> dict[str, Any]:
     if candidate["weighted_score"] <= baseline["weighted_score"]:
         reasons.append("Candidate weighted score did not beat baseline.")
 
+    reader_fit_by_case: dict[str, dict[str, Any]] = {}
+    reader_fit_cases_passed = 0
+    missing_cases = [
+        case_id
+        for case_id in REPRESENTATIVE_CASES
+        if not any(row["case_id"] == case_id for row in grouped["baseline"])
+    ]
+    if missing_cases:
+        reasons.append(
+            "Reader-fit gate is missing representative cases: "
+            + ", ".join(missing_cases)
+            + "."
+        )
+    else:
+        for case_id in REPRESENTATIVE_CASES:
+            comparisons: dict[str, dict[str, float]] = {}
+            for metric in FIT_METRICS:
+                baseline_values = [
+                    float(row[metric])
+                    for row in grouped["baseline"]
+                    if row["case_id"] == case_id
+                ]
+                candidate_values = [
+                    float(row[metric])
+                    for row in grouped["candidate"]
+                    if row["case_id"] == case_id
+                ]
+                comparisons[metric] = {
+                    "baseline": sum(baseline_values) / len(baseline_values),
+                    "candidate": sum(candidate_values) / len(candidate_values),
+                }
+            passed = all(
+                values["candidate"] >= values["baseline"]
+                for values in comparisons.values()
+            )
+            reader_fit_by_case[case_id] = {"passed": passed, **comparisons}
+            reader_fit_cases_passed += int(passed)
+        if reader_fit_cases_passed < 4:
+            reasons.append(
+                "Reader-fit gate requires at least 4 of 5 representative cases "
+                "to be no worse on point_early, ease_to_start, and reading_load."
+            )
+
     return {
         "weights": WEIGHTS,
         "conditions": conditions,
-        "release_gate": {"passed": not reasons, "reasons": reasons},
+        "release_gate": {
+            "passed": not reasons,
+            "reasons": reasons,
+            "reader_fit_cases_passed": reader_fit_cases_passed,
+            "reader_fit_cases_required": 4,
+            "reader_fit_by_case": reader_fit_by_case,
+        },
     }
 
 
