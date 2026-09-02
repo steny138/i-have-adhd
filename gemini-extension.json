@@ -1,6 +1,6 @@
 {
   "name": "i-have-adhd",
   "version": "0.2.0",
-  "description": "Shape Gemini CLI output for an ADHD reader: lead with the next action, number steps, suppress tangents, restate state, make wins visible.",
+  "description": "Shape Gemini CLI output for an ADHD reader: surface the point early without losing evidence, risks, or required detail.",
   "contextFileName": "GEMINI.md"
 }
