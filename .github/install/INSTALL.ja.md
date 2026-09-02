@@ -6,7 +6,7 @@
 ### インストール
 
 ```bash
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/steny138/i-have-adhd
 ```
 
 ### 確認
@@ -19,7 +19,7 @@ agy plugin list
 
 ```bash
 agy plugin uninstall i-have-adhd
-agy plugin install https://github.com/ayghri/i-have-adhd
+agy plugin install https://github.com/steny138/i-have-adhd
 ```
 
 ### アンインストール
@@ -61,7 +61,7 @@ agy plugin uninstall i-have-adhd
 ### インストール
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
+claude plugin marketplace add steny138/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
@@ -113,7 +113,7 @@ rm ~/.claude/.i-have-adhd-always
 ### インストール
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd --ref main
+codex plugin marketplace add steny138/i-have-adhd --ref main
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
@@ -174,7 +174,7 @@ Gemini CLI にはプラグインマーケットプレイスがないため、ネ
 
 ```bash
 mkdir -p ~/.gemini/commands
-curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
+curl -fsSL https://raw.githubusercontent.com/steny138/i-have-adhd/main/skills/i-have-adhd/agents/gemini.toml \
   -o ~/.gemini/commands/i-have-adhd.toml
 ```
 
@@ -183,7 +183,7 @@ curl -fsSL https://raw.githubusercontent.com/ayghri/i-have-adhd/main/skills/i-ha
 ### インストール (extension, always-on)
 
 ```bash
-gemini extensions install https://github.com/ayghri/i-have-adhd
+gemini extensions install https://github.com/steny138/i-have-adhd
 ```
 
 拡張機能は完全なスキルをインポートする `GEMINI.md` を読み込むため、最初のメッセージからルールが適用されます。`git` のインストールが必要です。
@@ -221,14 +221,14 @@ Copilot は Agent Skills をネイティブに読み取るため、同じ `SKILL
 ### インストール
 
 ```bash
-npx skills add ayghri/i-have-adhd -a github-copilot        # このプロジェクト
-npx skills add ayghri/i-have-adhd -a github-copilot -g     # すべてのプロジェクト
+npx skills add steny138/i-have-adhd -a github-copilot        # このプロジェクト
+npx skills add steny138/i-have-adhd -a github-copilot -g     # すべてのプロジェクト
 ```
 
 CLI を使わない場合は、Copilot が検索するいずれかのディレクトリにスキルフォルダーをコピーします：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.copilot/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.copilot/skills/
 ```
@@ -293,7 +293,7 @@ Copilot は `disable-model-invocation` を尊重します。Claude Code と同�
 ### インストール
 
 ```bash
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install steny138/i-have-adhd/skills/i-have-adhd
 ```
 
 `/i-have-adhd` と入力します。 The skill installs into `~/.hermes/skills/` and is exposed as a slash command at the next session start.
@@ -301,9 +301,9 @@ hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
 先に内容を確認したい場合は、このリポジトリをスキルソース（「tap」）として追加してから、検索してインストールします：
 
 ```bash
-hermes skills tap add ayghri/i-have-adhd
+hermes skills tap add steny138/i-have-adhd
 hermes skills search adhd
-hermes skills install ayghri/i-have-adhd/skills/i-have-adhd
+hermes skills install steny138/i-have-adhd/skills/i-have-adhd
 ```
 
 ### 確認
@@ -324,7 +324,7 @@ hermes skills update i-have-adhd
 hermes skills uninstall i-have-adhd
 ```
 
-tap も削除する場合は、`hermes skills tap remove ayghri/i-have-adhd` を実行します。
+tap も削除する場合は、`hermes skills tap remove steny138/i-have-adhd` を実行します。
 
 ### 常時有効（任意）
 
@@ -360,7 +360,7 @@ Kimi Code セッションを開始してから、次を実行します：
 
 1. `/plugins` を実行する。
 2. **Custom** を選ぶ。
-3. `https://github.com/ayghri/i-have-adhd` を貼り付けて Enter を押す。
+3. `https://github.com/steny138/i-have-adhd` を貼り付けて Enter を押す。
 4. **Trust and install** を選ぶ。
 
 slash コマンド `/skill:i-have-adhd` を使って、このスキルを明示的に呼び出します。
@@ -384,13 +384,13 @@ Pi は Agent Skills 標準を実装しているため、同じ `SKILL.md` を変
 ### インストール
 
 ```bash
-npx skills add ayghri/i-have-adhd -a pi -y
+npx skills add steny138/i-have-adhd -a pi -y
 ```
 
 ファイルシステムを使う場合、Pi は `~/.pi/agent/skills/` と `~/.agents/skills/`（グローバル）、`.pi/skills/` と `.agents/skills/`（プロジェクト）からスキルを検出します：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.pi/agent/skills
 cp -R i-have-adhd/skills/i-have-adhd ~/.pi/agent/skills/
 ```
@@ -459,7 +459,7 @@ npx skills remove i-have-adhd
 ### インストール
 
 ```bash
-qwen extensions install ayghri/i-have-adhd
+qwen extensions install steny138/i-have-adhd
 ```
 
 Qwen Code は GitHub の短縮表記をサポートし、このリポジトリをネイティブ拡張機能としてインストールします。拡張機能は `skills/` 配下のスキルを検出します。
@@ -504,7 +504,7 @@ Zed の Agent は Agent Skills をネイティブに読み取るため、同じ 
 Agent Panel で Skills マネージャーを開き、**Create skill from URL**（コマンドパレットでは `agent: create skill from url`）を選択して、次を貼り付けます：
 
 ```
-https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
+https://github.com/steny138/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
 ```
 
 すべてのプロジェクトで使う場合は **User** スコープ、1 つだけなら **Project** スコープに保存します。その後、Agent Panel で `/i-have-adhd` と入力します。
@@ -512,7 +512,7 @@ https://github.com/ayghri/i-have-adhd/blob/main/skills/i-have-adhd/SKILL.md
 ファイルシステムを使う場合は、リポジトリをクローンし、ユーザーの skills ディレクトリにスキルフォルダーを配置します：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 cp -R i-have-adhd/skills/i-have-adhd ~/.config/zed/skills/
 ```
 
@@ -561,10 +561,10 @@ Agent Skills を読み取るすべての環境で動作します。`-a <agent>` 
 ### インストール
 
 ```bash
-npx skills add ayghri/i-have-adhd                  # this workspace
-npx skills add ayghri/i-have-adhd -g               # すべてのプロジェクト
-npx skills add ayghri/i-have-adhd -a cursor -y     # one agent only
-npx skills add ayghri/i-have-adhd -a opencode -y
+npx skills add steny138/i-have-adhd                  # this workspace
+npx skills add steny138/i-have-adhd -g               # すべてのプロジェクト
+npx skills add steny138/i-have-adhd -a cursor -y     # one agent only
+npx skills add steny138/i-have-adhd -a opencode -y
 ```
 
 新しいエージェントチャットで `/i-have-adhd` と入力します。
@@ -572,7 +572,7 @@ npx skills add ayghri/i-have-adhd -a opencode -y
 CLI を使わない場合は、エージェントが検索するパスにスキルフォルダーをコピーします：
 
 ```bash
-git clone https://github.com/ayghri/i-have-adhd
+git clone https://github.com/steny138/i-have-adhd
 mkdir -p ~/.cursor/skills     # Cursor。OpenCode は .agents/skills、その他はエージェント固有のパスを使用
 cp -R i-have-adhd/skills/i-have-adhd ~/.cursor/skills/
 ```
